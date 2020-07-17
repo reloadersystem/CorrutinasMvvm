@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "315820382555",
+    "firebase_url": "https://reloadercorrutinas.firebaseio.com",
+    "project_id": "reloadercorrutinas",
+    "storage_bucket": "reloadercorrutinas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315820382555:android:96ba6d4d124dae7f25e27e",
+        "android_client_info": {
+          "package_name": "com.reloader.corrutinasvmodel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315820382555-ci0v671r9qn9ijsjunck341u2edgu1ah.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.reloader.corrutinasvmodel",
+            "certificate_hash": "0313bd946df14319cb724b13050f23ced3a6e89c"
+          }
+        },
+        {
+          "client_id": "315820382555-q9hjs5tkq6h7e8j3m88ae7mr2k074sgk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAidttVunPNfPOdzZJy-waweqzQ-maoRww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315820382555-q9hjs5tkq6h7e8j3m88ae7mr2k074sgk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
