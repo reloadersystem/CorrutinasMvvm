@@ -11,7 +11,6 @@ import com.reloader.corrutinasvmodel.domain.UseCaseImpl
 import com.reloader.corrutinasvmodel.presentation.viewmodel.MainViewModel
 import com.reloader.corrutinasvmodel.presentation.viewmodel.MainViewModelFactory
 import com.reloader.corrutinasvmodel.vo.Resource
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity() {
 
@@ -46,7 +45,11 @@ class MainActivity : BaseActivity() {
                 }
 
                 is Resource.Success -> {
-                    txt_version.text = result.data.toString()
+                    //  txt_version.text = result.data.toString()
+                    val actualVersion = result.data
+                    if (appIsOutDated(actualVersion)) {
+                        showUpdateProgress()
+                    }
                     hideProgress()
                 }
 
@@ -64,6 +67,14 @@ class MainActivity : BaseActivity() {
                 }
             }
         })
+    }
+
+
+   private fun appIsOutDated(actualVersion: Int): Boolean {
+
+        val buildeVersionCode = BuildConfig.VERSION_CODE
+        return buildeVersionCode < actualVersion
+
     }
 
 
